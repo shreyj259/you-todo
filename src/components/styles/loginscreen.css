@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-container{
+    margin: 100px 110px;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.form-border-box{
+    margin: 0 80px;
+    padding: 60px 40px;
+    border-radius: 55px;
+    border: 2px solid #1A3B583D;
+}
+
+.nav{
+    margin: 0 0 20px;
+}
+
+.nav a{
+    margin: 0 20px 0 0;
+    color: #1A3B5854;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.active-link{
+    color: #1A3B58 !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.login-text{
+    margin-top: 15px;
+    font-size: 10px;
+    color: #999999;
+}
+
+.login-head{
+    color: #1A3B58;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.active-link::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: #1A3B58;
+    bottom: -5px;
+    left: 0;
+}
+
+.inner-box{
+    margin: 40px 30px 20px;
+    border-top: 2px solid #4091DF1F;
+    padding-top: 20px;
+    width: 270px;
+    height: 300px;
+}
+
+.inner-box input{
+    border: 1px solid #CBDBEA;
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px 12px;
+    margin: 15px 0 0;
+}
+
+.inner-box button{
+    background: #329C89;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0 ;
+    width: 100%;
+    padding: 7px ;
+}
+
+
+.inner-box input[type="checkbox"]{
+    width: max-content;
+    margin: 0 10px 0 0;
+}
+
+.error-box{
+    font-size: 12px;
+    font-weight: 500;
+    color: red;
+    margin: 10px 0 0;
+}

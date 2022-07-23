@@ -1,0 +1,30 @@
+.add-new,.todo-tile{
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 10px;
+    border-radius: 7px;
+    min-height: 120px;
+    margin-bottom: 15px;
+}
+
+.todo-tile{
+    min-height: fit-content;
+}
+
+.add-new input{
+    width: 100%;
+    border: none;
+    color: #A4ABB3;
+    outline: none;
+}
+
+
+
+#title,.todo-title{
+    font-size: 16px;
+}
+
+#desc,.todo-desc{
+    margin-top: 3px;
+    font-size: 12px;
+}

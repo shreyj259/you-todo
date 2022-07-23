@@ -1,0 +1,37 @@
+.active-tile{
+    color:#212121 !important;
+    font-weight: 500;
+    border-right: 2px solid #212121;
+}
+
+.tile{
+    display: flex;
+    color: #9A9A9A;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.title-img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.title-img svg{
+    width: 25px;
+}
+
+
+.links{
+    margin-top: 80px;
+}
+
+.toolbox{
+    margin-top: 120px;
+}
+
+
+.tile:hover{
+    color: #212121;
+    font-weight: 500;
+}
+
