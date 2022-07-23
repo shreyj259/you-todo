@@ -13,6 +13,12 @@ export default function Signup() {
     const [error,setError]=useState();
     const [loading,setLoading]=useState();
 
+    
+    const rememberHandler=()=>{
+      if(remember)
+      window.localStorage.setItem("isLoggedIn",true);
+  }
+
     const handleSubmit=async (e)=>{
         e.preventDefault();
         if(passRef.current.value.length<6){
@@ -23,6 +29,7 @@ export default function Signup() {
           setError('');
            await signup(emailRef.current.value,passRef.current.value);
            setLoading(false);
+           rememberHandler();
            history("/dashboard");
         }
         catch(err){
@@ -43,7 +50,8 @@ export default function Signup() {
         <input type="password" ref={passRef} placeholder="Password" /> <br/>
         {error && printError}
         <button disabled={loading }>Sign Up</button>
-        <input type="checkbox"  id="remember" name="remember"/> 
+        
+        <input type="checkbox" onChange={(e)=>setRemember(e.target.checked)} id="remember" name="remember"/> 
         <label htmlFor="remember">Remember Me</label>
         </form>
     </div>
