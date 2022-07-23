@@ -9,6 +9,7 @@ export default function Signup() {
     const nameRef=useRef();
     const {signup} = useAuth()
     const history=useNavigate();
+    const [remember,setRemember]=useState(false);
 
     const [error,setError]=useState();
     const [loading,setLoading]=useState();
